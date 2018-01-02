@@ -1,0 +1,11 @@
+{% if user %}
+<p>Witaj {{user}}</p>
+{% endif %}
+<p>strona: {{page}}</p>
+<h3><a href="{{ url }}">{{ name }}</a></h3>
+<p>{{ absUrl }}</p>
+{% for i in 1..10 %}
+    <div class="{{ cycle(['even', 'odd'], i) }}">
+      {{ cycle(['nieparzysty', 'parzysty'], i) }}
+    </div>
+{% endfor %}

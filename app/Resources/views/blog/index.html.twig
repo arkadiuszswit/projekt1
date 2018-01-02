@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link href="{{ asset('css/contact.css') }}" rel="stylesheet" />
+{% endblock %}
+{% block title %}My cool blog posts{% endblock %}
+
+{% block body %}
+	<h1>Lista wpisów: strona {{ page }}</h1>
+{% endblock %}
